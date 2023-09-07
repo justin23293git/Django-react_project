@@ -6,7 +6,7 @@ function App() {
   useEffect(()=>{
     async function getAllStudent(){
       try {
-        const students = await axios.get("http://127.0.0.1:8000/api/student/")
+        const students = await axios.get("http://13.127.137.1:8000/api/student/")
         console.log(students.data)
         setStudents(students.data)
       } catch (error) {
